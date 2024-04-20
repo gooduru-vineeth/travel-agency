@@ -1,0 +1,27 @@
+{
+  "name": "blogger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"./**/*.{ts,js,json}\"",
+    "format:check": "prettier --check \"./**/*.{ts,js,json}\"",
+    "lint": "eslint ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mongoosejs/async-hooks": "0.0.4",
+    "express": "^4.18.1",
+    "joi": "^17.12.3",
+    "mongoose": "^6.5.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "eslint": "^9.0.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "globals": "^15.0.0"
+  }
+}

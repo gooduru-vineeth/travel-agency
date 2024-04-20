@@ -1,0 +1,10 @@
+.idea/
+.vscode/
+.editorconfig
+node_modules
+dumps/
+*.txt
+*.csv
+*.log
+*.DS_Store
+*.env*

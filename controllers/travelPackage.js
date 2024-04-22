@@ -25,7 +25,10 @@ module.exports.addDestination = async (req, res) => {
       .json({ success: false, message: error.details[0].message });
   }
   try {
-    const result = await travelPackageService.addDestination(req.params.travelPackageId,req.body.destinationId);
+    const result = await travelPackageService.addDestination(
+      req.params.travelPackageId,
+      req.body.destinationId
+    );
     return res.status(200).json({ success: true, data: result });
   } catch (err) {
     console.error(err);
@@ -41,7 +44,10 @@ module.exports.addPassenger = async (req, res) => {
       .json({ success: false, message: error.details[0].message });
   }
   try {
-    const result = await travelPackageService.addPassenger(req.params.travelPackageId, req.body.passengerId);
+    const result = await travelPackageService.addPassenger(
+      req.params.travelPackageId,
+      req.body.passengerId
+    );
     return res.status(200).json({ success: true, data: result });
   } catch (err) {
     console.error(err);

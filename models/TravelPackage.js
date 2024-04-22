@@ -4,7 +4,7 @@ const collection = "travelPackage";
 
 const TravelPackage = new mongoose.Schema(
   {
-    name: { type: String, required: true,unique:true },
+    name: { type: String, required: true, unique: true },
     passengerCapacity: { type: Number, required: true },
     destinations: [
       { type: mongoose.Schema.Types.ObjectId, ref: "Destination" },

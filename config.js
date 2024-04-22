@@ -7,4 +7,8 @@ module.exports = {
   app: {
     port: process.env.PORT || 3000,
   },
+  auth: {
+    appId: process.env.APP_ID || "travelAgency",
+    appSecret: process.env.APP_SECRET,
+  },
 };

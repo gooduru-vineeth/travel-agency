@@ -3,10 +3,14 @@ const passengerController = require("../controllers/passenger");
 const destinationController = require("../controllers/destination");
 const activityController = require("../controllers/activity");
 const travelPackageController = require("../controllers/travelPackage");
+const { checkAuthentication } = require("../middleware/authentication");
 
 router.get("/", (req, res) => {
   res.json({ message: "welcome to travel agency" });
 });
+
+// authentication middleware
+router.use("*", checkAuthentication);
 
 // passenger routes
 router.post("/passenger", passengerController.createPassenger);
